@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "9e79fbf7-4a21-4eb7-a859-33fb08810b04",
+		"name": "test_oauth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "inventory",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "redirect_uri",
+							"value": "http://localhost:8080/callback",
+							"type": "string"
+						},
+						{
+							"key": "code_verifier",
+							"value": "MdT6LcwwHrCdsgCj1RjD7.2ubSfcngaIltmD_ahGt-WsdDUONq4reePbUp~ywd7RdvpxWraIOZrScMsJRm6~-NxBvKGeuxgOk8P.LBYX7zrIt9h~vgB_syVTtNKx0wIj",
+							"type": "string"
+						},
+						{
+							"key": "state",
+							"value": "fdfsdfsdf",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "openid",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "4baa2fdd-c22e-442f-a7b3-27ef8dec8dbc",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "742e7fcb-3017-4ded-8a4f-e07cea278f9a",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "http://localhost:8081/local/session/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "http://localhost:8081/local/session/oauth/authorize",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "test",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code_with_pkce",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8065/v2/store/inventory",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8065",
+					"path": [
+						"v2",
+						"store",
+						"inventory"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
